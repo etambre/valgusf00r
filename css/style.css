@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 144, 207);
+}
+
+.main {
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative; /*top-right-bottom-left*/
+    animation: punane;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes punane {
+    0% {top: -250px;}
+    100% {top: 0px;}
+}
+
+
+#yellow {
+    background-color: yellow; 
+    position: relative;
+    animation: kollane;  
+    animation-duration: 3s;
+}
+
+@keyframes kollane {
+    0% {left: -1000px;}
+    70% {left: 60px;}
+    100% {left: 0;}
+}
+
+
+#green {
+    background-color: green;
+    position: relative;
+    animation: roheline;
+    animation-duration: 5s;
+}
+
+@keyframes roheline {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
